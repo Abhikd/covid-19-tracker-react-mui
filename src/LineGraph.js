@@ -78,12 +78,12 @@ function LineGraph({ casesType }) {
         });
     };
 
-    fetchData();
+    fetchData(); 
   }, [casesType]);
 
   return (
     <div>
-        <h1>Graph</h1>
+        <h1 style={{ marginTop: 10 }}>Graph</h1>
       {data?.length > 0 && (
         <Line
           data={{
