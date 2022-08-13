@@ -74,7 +74,6 @@ function LineGraph({ casesType }) {
         .then((data) => {
           let chartData = buildChartData(data, casesType);
           setData(chartData);
-          console.log(chartData);
         });
     };
 
@@ -83,7 +82,7 @@ function LineGraph({ casesType }) {
 
   return (
     <div>
-        <h1 style={{ marginTop: 10 }}>Graph</h1>
+        <h2 style={{ marginTop: 10, marginBottom: 10 }}>Worldwide new cases</h2>
       {data?.length > 0 && (
         <Line
           data={{
