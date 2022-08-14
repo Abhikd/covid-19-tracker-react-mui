@@ -17,7 +17,7 @@ function App() {
   const [casesType, setCasesType] = useState("cases");
   const [mapZoom, setMapZoom] = useState(3);
   const [mapCenter, setMapCenter]  = useState({ lat: 34.80746, lng: -40.4796 });
-  const [mapCountries, setMapCountries] = useState([];)
+  const [mapCountries, setMapCountries] = useState([]);
 
   useEffect(() => {
     fetch ("https://disease.sh/v3/covid-19/all")

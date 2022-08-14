@@ -28,6 +28,13 @@ body {
   flex: 0.9;
 }
 
+.infoBox {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  background-color: aqua;
+}
+
 @media (max-width: 990px) {
   .app{
     flex-direction: column;
