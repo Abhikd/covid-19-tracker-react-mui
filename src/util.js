@@ -13,7 +13,7 @@ const casesTypeColors = {
         multiplier: 55,
     },
 
-    cases: {
+    deaths: {
         hex: "#fb4443",
         multiplier: 65,
     },
@@ -31,11 +31,13 @@ export const sortData = (data) => {
         else return 1;
     })
     return sortedData;
-}
+};
+
+export const prettyPrintStat =(stat) =>  stat ? `+${numeral(stat).format("0,0a")}` : "+0" ;
 
 
 
-export const showDataOnMap = (data, casesType='cases') =>  
+export const showDataOnMap = (data, casesType) =>  
     data.map(country => (
         <Circle center={[country.countryInfo.lat, country.countryInfo.long]} 
         fillOpacity={0.4}
@@ -54,6 +56,5 @@ export const showDataOnMap = (data, casesType='cases') =>
             </div>
         </Popup>
         </Circle>
-    ))
-
+    ));
 

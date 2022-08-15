@@ -82,7 +82,7 @@ function LineGraph({ casesType }) {
 
   return (
     <div>
-        <h2 style={{ marginTop: 10, marginBottom: 10 }}>Worldwide new cases</h2>
+        <h2 style={{ marginTop: 10, marginBottom: 10 }}>Worldwide new {casesType}</h2>
       {data?.length > 0 && (
         <Line
           data={{
